@@ -1,4 +1,6 @@
-//ist eine funktion damit man die weiterleitung ins clipboard kopiert !
+// clipboard kopieren funktion per javascript
+
+
 
 const sharebuttons = document.querySelectorAll('.tile-share-button')
 console.log(sharebuttons)
