@@ -1,0 +1,246 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: orange;
+    justify-content: center;
+}
+.background {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.container-link {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    font-size:  20px;
+    justify-content: right;
+}
+.menu-link {
+    color: orange;
+    text-decoration: none;
+    margin-left: 30px;  
+}
+.menu-link:hover {
+    text-decoration: underline;
+}
+.logo {
+    position: absolute;
+    left: 35px;
+    top: 16px;
+    border-radius: 70px;
+    resize: 30px;
+    justify-content: flex;
+}
+.title {
+    position: absolute;
+    left: 50px;
+    top: 300px;
+    color: orange;
+    font-size: 40px;
+    width: 300px;
+    
+}
+.title2 {
+    left: 50px;
+    top: 300px;
+    color: orange;
+    text-align: center;
+    font-size: 40px;
+    
+}
+.second-title {
+    display: flex;
+    height: 300px;
+    padding: 30px 100px;
+    left: 30px;
+    right: 400px;
+    font-size: 20px;
+}
+.second-title2 {
+    height: 30px;
+    padding: 20px 15px;
+    left: 30px;
+    right: 30px;
+}
+.button {
+    background-color: orange;
+    padding: 8px;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: .5s;   
+}
+.See-you {
+    font-size: 20px;
+}
+.button:hover {
+    background: black;
+    color: orange;
+}
+.wrapper {
+    position: absolute;
+    top: 150px;
+    margin-left: 500px;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    overflow: hidden;
+    transition: transform .5s ease, height .2s ease;
+}
+.wrapper.active-popup {
+    transform: scale(1);
+}
+.wrapper.active {
+    height: 520px;
+}
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+.wrapper .box-login {
+   transition: transform .18s ease;
+   transform: translateX(0);
+}
+.wrapper.active .box-login {
+    transition: none;
+    transform: translateX(-400px);
+ }
+.wrapper .box-regi {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+.wrapper.active .box-regi {
+    transition: transform .18s ease;
+    transform: translateX(0);
+ }
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: orange;
+    font-size: 2em;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    border-top-right-radius: 18px;
+    z-index: 1;
+}
+
+.box-login h1 {
+    font-size: 2em;
+    color: orange;
+    text-align: center;
+}
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid orange;
+    margin: 30px 0;
+}
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: orange;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: orange;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.input-box .icon {
+    position: absolute;
+    right: 5px;
+    font-size: 1.2em;
+    color: orange;
+    line-height: 57px;
+}
+.remember-forgot {
+    font-size: .9em;
+    color: orange;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input {
+    accent-color: orange;
+    margin-right: 3px;
+}
+.remember-forgot a {
+    color: yellow;
+    text-decoration: none;
+}
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+.btn2 {
+    width: 100%;
+    height: 45px;
+    background: orange;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+}
+
+.login-register {
+    font-size: .9em;
+    color: orange;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.login-register p a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+.login-register p a:hover {
+    text-decoration: underline;
+}
